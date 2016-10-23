@@ -1,0 +1,6 @@
+
+E-commerce website Test
+
+Tong Wei 
+
+IS2545 - DELIVERABLE 3 : Web Testing with BDD
