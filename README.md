@@ -1,8 +1,9 @@
 # Delivarable3
 
+
 Description
 
-     While at the very beginning , I selected the geckodriver and firefox broswer to test the E-commerce website, but
+   While at the very beginning , I selected the geckodriver and firefox broswer to test the E-commerce website, but
 it always encountered some error over and over again. I consulted some of my classmates who ran successfully, they told
 me that maybe because the version of the browser was out of date.
 
