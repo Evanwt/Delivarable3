@@ -4,16 +4,21 @@
 Description
 
    While at the very beginning , I selected the geckodriver and firefox broswer to test the E-commerce website, but
+
 it always encountered some error over and over again. I consulted some of my classmates who ran successfully, they told
+
 me that maybe because the version of the browser was out of date.
 
-   So I decided to use the Chrome broswer for testing the website and the driver was using the corresponding one, namely chromedriver.
- Initially, I also failed, I searched the reason on stackoverflow, and got the solution that the jdk should be used version 1.8.
-  Also we need to set the appropriate waiting time for the broswer to load. 
+   So I decided to use the Chrome broswer for testing the website and the driver was using the corresponding one, namely 
+   
+chromedriver.Initially, I also failed, I searched the reason on stackoverflow, and got the solution that the jdk should be 
 
+used version 1.8. Also we need to set the appropriate waiting time for the broswer to load. Then I ran the test 
 
-  Then I ran the test successfully, there were 3 storys in total, and each of the story contained 3 scenarios. 
+successfully, there were 3 storys in total, and each of the story contained 3 scenarios. 
 
+  
+  
   The first story was user Log in module.
    
    As a user,
