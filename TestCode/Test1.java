@@ -24,7 +24,7 @@ public class Test1 {
     private WebDriverWait wait;
 
     @Before
-    public void setup(){
+    public void initializaion(){
     	
         System.setProperty("webdriver.chrome.driver", "/users/tongwei/Documents/chromedriver");
         driver = new ChromeDriver();
@@ -39,7 +39,7 @@ public class Test1 {
      */
 
     @Test
-    public void nothing(){
+    public void nothingTypein(){
     	
         driver.findElement(By.id("login")).submit();
         
@@ -68,7 +68,7 @@ public class Test1 {
      */
 
     @Test
-    public void invalidpass(){
+    public void invalidPasswd(){
         
     	driver.findElement(By.name("log")).sendKeys("tongwei");
         driver.findElement(By.name("pwd")).sendKeys("123456");
@@ -96,7 +96,8 @@ public class Test1 {
      */
 
     @Test
-    public void invaliduser(){
+    public void invalidUserName(){
+	    
         driver.findElement(By.name("log")).sendKeys("wtong");
         driver.findElement(By.name("pwd")).sendKeys("Wt@@2212599");
         driver.findElement(By.name("submit")).click();
