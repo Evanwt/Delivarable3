@@ -1,5 +1,7 @@
+
 import com.google.common.base.Predicate;
 import org.junit.*;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,9 +11,9 @@ import static org.junit.Assert.assertEquals;
   //@author Tong Wei.
 
 /*
- * As a user,
- * I want to login the webSite,
- * So that I can buy products from the webSite using my account name.
+ *   As a user,
+ *   I want to login the webSite,
+ *   So that I can buy products from the webSite using my account name.
  * 
  */
 
@@ -23,7 +25,7 @@ public class Test1 {
     private WebDriverWait wait;
 
     @Before
-    public void initializaion(){
+    public void setup(){
     	
         System.setProperty("webdriver.chrome.driver", "/users/tongwei/Documents/chromedriver");
         driver = new ChromeDriver();
@@ -33,12 +35,13 @@ public class Test1 {
     }
 
     /**
-     * Login in with nothing
-     * User will not be allowed to log in;
+     *    Given a null value ,
+     *    When I try to log in with the null value,
+     *    Then it will prompt Error info.
      */
 
     @Test
-    public void nothingTypein(){
+    public void nothing(){
     	
         driver.findElement(By.id("login")).submit();
         
@@ -61,15 +64,15 @@ public class Test1 {
     }
 
     /**
-     * Login in with valid username and invalid password
-     * User will not be allowed to log in;
-     * return null
+     *    Given a valid username and invalid password,
+     *    When I try to log in with those credentials,
+     *    Then I should recieve an Error info.
      */
 
     @Test
-    public void invalidPasswd(){
+    public void invalidpass(){
         
-    	driver.findElement(By.name("log")).sendKeys("tongwei");
+    	driver.findElement(By.name("log")).sendKeys("evanwei");
         driver.findElement(By.name("pwd")).sendKeys("123456");
         driver.findElement(By.name("submit")).click();
        
@@ -90,15 +93,15 @@ public class Test1 {
     }
 
     /**
-     * Login in with invalid username and valid password
-     * User will not be allowed to log in;
+      *   Given a invalid username and valid password,
+      *   When I try to log in with those credentials,
+      *   Then it will prompt Error info again.
      */
 
     @Test
-    public void invalidUserName(){
-	    
+    public void invaliduser(){
         driver.findElement(By.name("log")).sendKeys("wtong");
-        driver.findElement(By.name("pwd")).sendKeys("Wt@@2212599");
+        driver.findElement(By.name("pwd")).sendKeys("Wt@2212599");
         driver.findElement(By.name("submit")).click();
         
         wait.until((Predicate<WebDriver>) d -> {

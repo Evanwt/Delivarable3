@@ -13,9 +13,14 @@ import java.util.List;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
-/**
- * @Author Tong Wei
- */
+ // @Author Tong Wei
+
+/*
+  *  As a user, 
+  *  I want to search the products that I want to buy.
+  *  So that I will know much about this kind of product
+  */
+
 public class Test3 {
 	
 	
@@ -24,7 +29,7 @@ public class Test3 {
 
     
     @Before
-    public void initialization() {
+    public void setup() {
         System.setProperty("webdriver.chrome.driver", "/users/tongwei/Documents/chromedriver");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 50);
@@ -32,12 +37,15 @@ public class Test3 {
     }
 
     /**
-     * Search any words
-     * There will be no result
-     */
+      *
+      *    Given the words that is not related to any products of the website,
+      *    When I try to type in the words in search bar and press the 'enter',
+      *    Then  the webpage returned nothing.
+      *   
+      */
 
     @Test
-    public void searchAnywords() {
+    public void searchanywords() {
     	
         driver.findElement(By.className("search")).sendKeys("any words");
         driver.findElement(By.className("search")).sendKeys(Keys.ENTER);
@@ -58,7 +66,10 @@ public class Test3 {
     }
 
     /**
-     * Search iPad There will be 3 results
+     *    
+     *    Given I the key word 'iPad'
+     *    When I try to type in the words in search bar and press 'enter',
+     *    Then there will be 3 results returned.
      * 
      */
 
@@ -91,8 +102,12 @@ public class Test3 {
         assertTrue(allItems.size() == 3);
     }
 
+    
     /**
-     * Search iPhone, there will be 5 results
+     *  Given I searched the key word 'iPhone'
+     *  When I try to type in the words in search bar and press 'enter',
+     *  Then there will be 5 results returned.
+     *  
      */
 
     @Test
@@ -129,6 +144,7 @@ public class Test3 {
         assertTrue(allItems.size() == 5);
     }
 
+    
     @After
     public void teardown() {
     	
