@@ -70,7 +70,7 @@ public class Test1 {
     @Test
     public void invalidpass(){
         
-    	driver.findElement(By.name("log")).sendKeys("evanwei");
+    	driver.findElement(By.name("log")).sendKeys("tongwei");
         driver.findElement(By.name("pwd")).sendKeys("123456");
         driver.findElement(By.name("submit")).click();
        
@@ -98,7 +98,7 @@ public class Test1 {
     @Test
     public void invaliduser(){
         driver.findElement(By.name("log")).sendKeys("wtong");
-        driver.findElement(By.name("pwd")).sendKeys("Wt@2212599");
+        driver.findElement(By.name("pwd")).sendKeys("Wt@@2212599");
         driver.findElement(By.name("submit")).click();
         
         wait.until((Predicate<WebDriver>) d -> {
