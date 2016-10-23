@@ -24,7 +24,7 @@ public class Test3 {
 
     
     @Before
-    public void setup() {
+    public void initialization() {
         System.setProperty("webdriver.chrome.driver", "/users/tongwei/Documents/chromedriver");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 50);
@@ -37,7 +37,7 @@ public class Test3 {
      */
 
     @Test
-    public void searchanywords() {
+    public void searchAnywords() {
     	
         driver.findElement(By.className("search")).sendKeys("any words");
         driver.findElement(By.className("search")).sendKeys(Keys.ENTER);
