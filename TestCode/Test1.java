@@ -1,6 +1,5 @@
 import com.google.common.base.Predicate;
 import org.junit.*;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
