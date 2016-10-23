@@ -43,17 +43,9 @@ import static org.junit.Assert.assertEquals;
 
 	    /**
 	     * 
-<<<<<<< Updated upstream
-	     * 
-	     *    I add a iPhone5 in my cart
-	     *    Click go to checkout, change Quantity to 5 and click update, 
-	     *    Then the total will be 60
-=======
 	     *   Given the product name, 
 	     *   When I try to put it in the shopping cart and change the quantity to 5, 
 	     *   Then I should recieve the message shown that the total cost is 60.
->>>>>>> Stashed changes
-	     * 
 	     */
 
 	    @Test
@@ -88,7 +80,6 @@ import static org.junit.Assert.assertEquals;
 	      *     Given the products name, and put it in the shopping cart,
 	      *     When I  Click go to checkout ,I remove it,
 	      *     Then the cart should be empty.
-          *
 	      */
 
 	    @Test
@@ -115,17 +106,9 @@ import static org.junit.Assert.assertEquals;
 	    }
 
 	    /**
-<<<<<<< Updated upstream
-	     * 
-	     *  I add a iPhone5 in my cart.
-	     *  Click continue shopping. 
-	     *  ThenI should stay at the page.
-=======
 	     *       Given a product name, and put it in the shopping cart,
-         *       When I decide to continue shopping,
+             *       When I decide to continue shopping,
 	     *       Then I should stay at the page.
->>>>>>> Stashed changes
-	     * 
 	     */
 
 	    @Test
