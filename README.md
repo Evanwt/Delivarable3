@@ -34,8 +34,7 @@ successfully, there were 3 storys in total, and each of the story contained 3 sc
   
      Given a valid username and invalid password,
         When I try to log in with those credentials,
-        Then I should recieve an Error info.
-
+        Then it will promt an Error info.
 
    Scenarios 3
    
