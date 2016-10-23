@@ -44,9 +44,9 @@ import static org.junit.Assert.assertEquals;
 	    /**
 	     * 
 	     * 
-	     * I add a iPhone5 in my cart
-	     * Click go to checkout
-	     * Change Quantity to 5 and click update, Total will be 60
+	     *    I add a iPhone5 in my cart
+	     *    Click go to checkout, change Quantity to 5 and click update, 
+	     *    Then the total will be 60
 	     * 
 	     */
 
@@ -109,9 +109,9 @@ import static org.junit.Assert.assertEquals;
 
 	    /**
 	     * 
-	     * I add a iPhone5 in my cart.
-	     * Click continue shopping. 
-	     * I should stay at the page
+	     *  I add a iPhone5 in my cart.
+	     *  Click continue shopping. 
+	     *  ThenI should stay at the page.
 	     * 
 	     */
 
