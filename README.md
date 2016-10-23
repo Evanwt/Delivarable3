@@ -24,25 +24,24 @@ successfully, there were 3 storys in total, and each of the story contained 3 sc
      I want to login the webSite,
      So that I can buy products from the website using my account name.
 
+     Scenarios 1
    
-   Scenarios 1
-   
-   Given a null value ,
-        When I try to log in with the null value,
-        Then it will prompt Error info.
+      Given a null value ,
+         When I try to log in with the null value,
+         Then it will prompt Error info.
 
-   Scenarios 2
+    Scenarios 2
   
-   Given a valid username and invalid password,
-       When I try to log in with those credentials,
-       Then I should recieve an Error info.
+     Given a valid username and invalid password,
+        When I try to log in with those credentials,
+        Then I should recieve an Error info.
 
 
    Scenarios 3
    
-  Given a invalid username and valid password,
-      When I try to log in with those credentials,
-      Then it will prompt Error info again.
+    Given a invalid username and valid password,
+       When I try to log in with those credentials,
+       Then it will prompt Error info again.
 
 
    The second story was checkout module.
