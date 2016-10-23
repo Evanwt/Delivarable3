@@ -26,7 +26,7 @@ import static org.junit.Assert.assertEquals;
 	    private WebDriverWait wait;
 
 	    @Before
-	    public void setup(){
+	    public void initialization(){
 	    	
 	        System.setProperty("webdriver.gecko.driver", "/users/tongwei/Documents/chromedriver");
 	       
@@ -51,7 +51,7 @@ import static org.junit.Assert.assertEquals;
 	     */
 
 	    @Test
-	    public void total(){
+	    public void totalCost(){
 	    	
 	        driver.findElement(By.className("go_to_checkout")).click();
 	        
@@ -85,7 +85,7 @@ import static org.junit.Assert.assertEquals;
 	     */
 
 	    @Test
-	    public void remove(){
+	    public void removeItems(){
 	        
 	    	driver.findElement(By.className("go_to_checkout")).click();
 	        wait.until((Predicate<WebDriver>) d -> d.findElement(By.name("submit")).isDisplayed());
