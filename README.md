@@ -36,11 +36,11 @@ successfully, there were 3 storys in total, and each of the story contained 3 sc
         When I try to log in with those credentials,
         Then it will promt an Error info.
 
-   Scenarios 3
+    Scenarios 3
    
-    Given a invalid username and valid password,
-       When I try to log in with those credentials,
-       Then it will prompt Error info again.
+     Given a invalid username and valid password,
+        When I try to log in with those credentials,
+        Then it will prompt Error info again.
 
 
    The second story was checkout module.
